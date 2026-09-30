@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #172554;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.progress-box {
+    margin: 25px auto;
+    max-width: 600px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #22c55e;
+    transition: 0.4s;
+}
+
+.motivation {
+    text-align: center;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.motivation h2 {
+    margin-bottom: 12px;
+}
+
+#motivationText {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.habits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.habit {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.habit h3 {
+    margin-bottom: 10px;
+}
+
+.habit label {
+    color: #cbd5e1;
+}
+
+.habit input {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.days-section {
+    margin-top: 35px;
+}
+
+.days-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#daysContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.day {
+    padding: 15px 5px;
+    text-align: center;
+    background: #1e293b;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.day:hover {
+    transform: translateY(-3px);
+    background: #334155;
+}
+
+.day.completed {
+    background: #166534;
+}
+
+.rules {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+
+.rules h2 {
+    margin-bottom: 15px;
+}
+
+.rules li {
+    list-style: none;
+    padding: 8px 0;
+    color: #cbd5e1;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .habits {
+        grid-template-columns: 1fr;
+    }
+
+    #daysContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
